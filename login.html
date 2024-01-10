@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">登录</div>
+        <div class="content">
+            <!-- 登录界面 -->
+            <div class="login-main">
+                <div class="row">
+                    <label class="label"><span class="red">*</span>用户：</label>
+                    <div class="row-content">
+                        <div class="input-content">
+                            <input class="input-item" id="username" placeholder="请输入账号/手机号" type="tel" />
+                            <!-- <i class="icon"></i> -->
+                        </div>
+                        <p class="input-msg" id="change_margin_1"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label"><span class="red">*</span>密码：</label>
+                    <div class="row-content">
+                        <div class="input-content">
+                            <input class="input-item" id="passwor" placeholder="请输入密码" type="password" />
+                            <img class="icon" id="eye1" src="images/eyeb.png" />
+                        </div>
+                        <p class="input-msg" id="pwd"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label"><span class="red">*</span>验证码：</label>
+                    <div class="row-content">
+                        <div class="input-container">
+                            <div class="input-content">
+                                <input class="input-item" id="codeyzm" placeholder="请输入验证码" type="text" />
+                                <!-- <i class="icon"></i> -->
+                            </div>
+                            <button class="code" onclick="look()" id="b" >发送验证码</button>
+                        </div>
+                        <p class="input-msg" id="yzm"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label"></label>
+                    <div class="row-content">
+                        <input class="input-checkbox" type="checkbox" id="" /><span>记住密码</span>
+                    </div>
+                </div>
+            </div>
+           <!-- 注册界面 -->
+            <div class="zc-main hide">
+                <div class="row">
+                    <label class="label"><span class="red">*</span>手机号：</label>
+                    <div class="row-content">
+                        <div class="input-container">
+                            <div class="input-content">
+                                <input class="input-item" id="zcname" placeholder="请输入手机号" type="tel" />
+                                <!-- <i class="icon"></i> -->
+                            </div>
+                            <button class="code">发送验证码</button>
+                        </div>
+                        <p class="input-msg" id="change_margin_2"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label"><span class="red">*</span>验证码：</label>
+                    <div class="row-content">
+                        <div class="input-content">
+                            <input class="input-item" id="zcyzm" placeholder="请输入验证码" type="tel" />
+                            <!-- <i class="icon"></i> -->
+                        </div>
+                        <p class="input-msg" id="zym2"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label"><span class="red">*</span>设置密码：</label>
+                    <div class="row-content">
+                        <div class="input-content">
+                            <input class="input-item" id="zcpassword" placeholder="请输入密码" type="password"  />
+                            <img class="icon" id="icon1" src="images/eyeb.png" />
+                        </div>
+                        <p class="input-msg" id="pwd2"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label"><span class="red">*</span>确认密码：</label>
+                    <div class="row-content">
+                        <div class="input-content">
+                            <input class="input-item" id="zcqrpassword" placeholder="请输入确认密码" type="password"  />
+                            <img class="icon" id="icon2" src="images/eyeb.png" />
+                        </div>
+                        <p class="input-msg" id="zcqrpwd"></p>
+                    </div>
+                </div>
+                
+            </div>
+             <!-- 忘记密码界面 -->
+            <div class="wj-main hide">
+                <div class="row">
+                    <label class="label"><span class="red">*</span>账号：</label>
+                    <div class="row-content">
+                        <div class="input-content">
+                            <input class="input-item" id="wjname" placeholder="请输入账号" type="text" />
+                            <!-- <i class="icon"></i> -->
+                        </div>
+                        <p class="input-msg" id="change_margin_3"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label"><span class="red">*</span>设置密码：</label>
+                    <div class="row-content">
+                        <div class="input-content">
+                            <input class="input-item" id="wjpassword" placeholder="请输入密码" type="password" />
+                            <img class="icon" id="wjicon1" src="images/eyeb.png" />
+                        </div>
+                        <p class="input-msg" id="wjpwd"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label"><span class="red">*</span>确认密码：</label>
+                    <div class="row-content">
+                        <div class="input-content">
+                            <input class="input-item" id="wjqrpassword" placeholder="请输入确认密码" type="password" />
+                            <img class="icon" id="wjicon2" src="images/eyeb.png" />
+                        </div>
+                        <p class="input-msg" id="wjqrpwd"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="label"><span class="red">*</span>手机号：</label>
+                    <div class="row-content">
+                        <div class="input-container">
+                            <div class="input-content">
+                                <input class="input-item" id="wjtelnum" placeholder="请输入手机号码" type="tel" />
+                                <!-- <i class="icon"></i> -->
+                            </div>
+                            <button class="code">发送验证码</button>
+                        </div>
+
+                        <p class="input-msg" id="wjtel"></p>
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <label class="label"><span class="red">*</span>E-mail：</label>
+                    <div class="row-content">
+                        <div class="input-content">
+                            <input class="input-item" id="wjmail" placeholder="请输入E-mail" />
+                            <!-- <i class="icon"></i> -->
+                        </div>
+                        <p class="input-msg" id="wjm"></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label class="label"><span class="red">*</span>验证码：</label>
+                    <div class="row-content">
+                            <div class="input-content">
+                                <input class="input-item" id="wjyzm" placeholder="请输入验证码" />
+                                <!-- <i class="icon"></i> -->
+                            </div>
+                        <p class="input-msg" id="wjyzmts"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <button class="foot-button-sub" id="submitBtn">提交</button>
+            <div class="foot-foot">
+                <a class="btn hide" id="dl-btn">登录</a>
+                <a class="btn" id="zc-btn">注册</a>
+                <a class="btn" id="wj-btn">忘记密码？</a>
+            </div>
+        </div>
+    </div>
+    <ul class="list-container">
+        <li data-id="1">1</li>
+        <li  data-id="2">2</li>
+        <li  data-id="3">3</li>
+        <li  data-id="4">4</li>
+        <li  data-id="5">5</li>
+        <li  data-id="6">6</li>
+    </ul>
+    <script src="./js/login.js"></script>
+    <!-- <script>
+        const loginObj = {
+            init () {
+                console.log(11111111)
+            }
+        }
+        loginObj.init()
+
+        class Login {
+            constructor () {
+                this.type = 1
+            }
+            init () {
+                console.log('type', this.type)
+            }
+        }
+        let a = new Login();
+        a.init()
+    </script> -->
+
+   
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/*****************通用公共样式*********/
+html {
+    line-height: initial;
+}
+html, body {
+    font-family: "Microsoft Yahei" ,"SimHei", "SimSun", Arial, sans-serif;
+    background: #ffffff;
+}
+html, body, ul, ol, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, img, div, a, b, s, i, span, header,
+article, nav, section, footer, form, input, select, option, textarea, button, label,
+table, tr, td, th, thead, tbody, tfoot, canvas, video, audio, svg {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+img {
+    vertical-align: bottom;
+    border: none;
+}
+a {
+    color: #26c872;
+    text-decoration: none;
+}
+/*清除表单默认样式*/
+input, button, select, textarea {
+    outline: medium;
+    border: none;
+    /* -webkit-appearance: none; */
+    -moz-appearance: none;
+}
+/*等高,需要定义宽度*/
+.equal-1 {
+    display: block;
+    width: 100%;
+}
+.equal-1 .left, .equal-1 .right {
+    display: table-cell;
+}
+.equal-2 {
+    display: flex;
+    width: 100%;
+}
+.equal-2 .right {
+    flex: 1;
+}
+/*/!*超出宽度省略号*/
+.ultra-wide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*清除浮动*/
+.clear:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/*子元素水平排列*/
+.level {
+    -moz-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+    box-orient: horizontal;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+/*字母数字强制换行*/
+.newline {
+    word-wrap: break-word;
+    word-break: normal;
+}
+/*内容不换行*/
+.no-newline {
+    word-break: keep-all;
+    white-space: nowrap;
+}
+/*父元素自适应内容宽度*/
+.adaption {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}

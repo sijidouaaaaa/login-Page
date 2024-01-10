@@ -1,0 +1,144 @@
+
+button {
+        /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+        cursor: pointer;
+        /* 默认有灰色边框我们需要手动去掉 */
+        border: 0; 
+        outline: none;
+      }
+      a {
+        color: #111111;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      body {
+        position: relative;
+        height: 100vh;
+        font-family: Arial;
+        background: url(../images/bg.png) no-repeat;
+        background-size: 100% 100%;
+      }
+       /* 水平垂直居中 */
+      .login-enroll-resect{
+         
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      /* 登录 */
+      .login{
+       
+        margin: 0 auto;
+        padding: 20px;
+        width: 450px;
+        /* height: 450px; */
+        border-radius: 8px;
+        background:white;
+      }
+      /* 顶部 */
+      .login-top{
+        height: 40px;
+        border-bottom: 1px solid #dddd;
+        text-align: center;
+        line-height:40px;
+        font-size: 20px;
+        color: rgb(134, 27, 196);
+        position: relative;
+      }
+      
+      .login-box{
+        margin: 0 auto;
+        box-sizing: border-box;
+        width: 80%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .login-box
+
+      .login-box label{
+        display: inline-block;
+        width: 80px;
+        text-align: right;
+        
+      }
+     
+      
+    
+      .login-box input{
+        width: 180px;
+        height: 25px;
+        margin-bottom: 20px;
+      }
+      .login-input-yzm input{
+        width: 100px;
+        height: 25px;
+        margin-bottom: 20px;
+      }
+      .login-input-yzm .login-input-hqyzm{
+        height: 25px;
+        width: 80px;
+      }
+      .login-input-yzm .login-input-hqyzm:hover{
+          color:rgb(32, 91, 219);
+      }
+      .login-box .checkbox{
+         width: 280px;
+
+
+      }
+      .login-box span{
+          color: red;
+      }
+
+
+
+
+
+
+
+
+      .login-btnon button{
+           width: 280px;
+           background-color:blue;
+      }
+      /* 底部两端对齐 */
+      .login-box-buttom a{
+          
+          display: flex;
+          justify-content: space-between;
+      }
+
+
+
+
+
+
+
+      
+      /* 注册 */
+      .enroll{
+        /* 隐藏 */  
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 450px;
+        /* height: 450px; */
+        border-radius: 8px;
+        background:white;
+      }
+      /* 重设 */
+      .resect{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 450px;
+        /* height: 450px; */
+        border-radius: 8px;
+        background:white;
+      }

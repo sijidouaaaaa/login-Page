@@ -1,0 +1,98 @@
+
+img {
+  /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+  border: 0;
+  /* 取消图片底侧有空白缝隙的问题 */
+  vertical-align: middle
+}
+
+button {
+  /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+  cursor: pointer;
+  /* 默认有灰色边框我们需要手动去掉 */
+  border: 0; 
+  outline: none;
+}
+
+a {
+  color: #111111;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*共同*/
+
+
+div button{
+  background-color:blue;
+}
+
+
+.cbox{
+  margin-left:100px;
+}
+.small-inp{
+  width: 200px;
+  height: 25px;
+}
+
+input{
+  width: 220px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/*登录界面*/
+.dlbox{
+  margin: 0 auto;
+  padding: 20px;
+  width: 450px;
+  /* height: 450px; */
+  border-radius: 8px;
+  background:white;
+  
+}
+img{
+  width: 50px;
+  height: 25px;
+}
+
+/*注册界面*/
+.zcbox{
+    visibility: hidden; 
+    display: none;
+  width: 450px;
+  height: 600px;
+  border-radius: 8px;
+  background:white;
+  margin: 0 auto;
+
+}
+
+/*忘记密码界面*/
+.errbox{
+    /* visibility: hidden; */
+    /* display: none; */
+  width: 450px;
+  height: 450px;
+  border-radius: 8px;
+  background:white;
+  margin: 0 auto;
+
+}
+
+
+.container  {
+  /* 布局 */
+  /* 内边距 */
+  /* 宽度高度 */
+  
+}
+
